@@ -1,0 +1,63 @@
+.whywe {
+	text-align: center;
+	position: relative; 
+	
+	&-trigger {
+		display: inline-block;
+		
+		vertical-align: middle;
+		width: 225px;
+		margin-top: 45px;
+		margin-left: 30px;
+		margin-right: 30px;
+		-webkit-border-radius: 2px;
+		        border-radius: 2px;
+		background: $green;
+		text-align: center;
+		-webkit-box-shadow: 0px 20px 20px 0px rgba(50, 50, 50, 0.2);
+		   -moz-box-shadow:    0px 20px 20px 0px rgba(50, 50, 50, 0.2);
+			    box-shadow:         0px 20px 20px 0px rgba(50, 50, 50, 0.2);
+		&-hr {
+			content: '';
+			margin: 20px auto 0;
+			height: 2px;
+			width: 200px;
+			border-top: 1px solid $green;
+			border-bottom: 1px solid $green;
+		}
+		&-h1 {
+			text-align: center;
+			text-transform: uppercase;
+			color: #FFF;
+			font-size: 15px;
+			font-weight: bold;
+			letter-spacing: 1px;
+		}
+		&-blockp {
+			position: relative;
+			height: 135px;
+			background: #FFF;
+			border: 0px solid $green;
+			text-align: center;
+			-webkit-border-radius: 0px;
+		        border-radius: 0px;
+			&-p {
+
+				padding-left: 20px;
+				padding-right: 20px;
+				line-height: 18px;
+				color: #333;
+				font-size: 11pt;
+				font-weight: 700;
+			}
+		}
+		&-fa {
+			font-size: 70px;
+			color: #FFF;
+			padding: 20px;
+			display: block;
+			margin: auto;
+		}
+
+	}
+}

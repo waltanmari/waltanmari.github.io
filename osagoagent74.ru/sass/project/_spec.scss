@@ -1,0 +1,86 @@
+.spec {
+	text-align: center;
+	background: url(../img/spec-bg1.jpg) no-repeat 100% center;
+	background-size: cover;
+	// &-h1 {
+	// 	display: block;
+	// 	margin: auto;
+	// 	text-align: center;
+	// 	font-size: 25px;
+	// 	padding: 50px;
+	// 	color: #FFF;
+	// 	text-transform: uppercase;
+	// }
+	&-block {
+		display: inline-block;
+		position: relative;
+		width: 420px;
+		top: 80px;
+		background: rgba(#FFF,.1);
+		margin-bottom: 25px;
+		margin-left: 12px;
+		margin-right: 12px;
+		border: 3px solid $green;
+	
+		&-h1 {
+				margin-top: 25px;
+				//margin-left: 25px;
+				text-align: center;
+				font-weight: bold;
+				text-transform: uppercase;
+				font-size: 25px;
+				color: $green;
+				.fa {
+					padding-right: 5px;
+				}
+
+			
+		}
+		&-text {
+			text-align: left;
+			margin: 25px auto 0;
+			color: #fff;
+			font-size: 17px;
+			width: 370px;
+			&-h3 {
+				margin-top: 5px; 
+				.fa {
+
+					color: $green;
+					padding-right: 10px;
+				}
+			}
+		}
+		&-button {
+			a {
+				display: block;
+				margin: 25px auto;
+				width: 300px;
+				padding-top: 15px;
+				padding-bottom: 15px;
+				background: $green;
+				color: #FFF;
+				text-decoration: none;
+				text-transform: uppercase;
+				font-weight: bold;
+				letter-spacing: 1px;
+				border-bottom: 3px solid darken($green,10%);
+				-webkit-border-bottom-right-radius: 3px;
+				-webkit-border-bottom-left-radius: 3px;
+				        border-bottom-right-radius: 3px;
+				        border-bottom-left-radius: 3px;
+				&:hover {
+					background: darken($green,10%);
+					border-bottom: 3px solid darken($green,20%);
+					color: darken(#FFF,10%);
+					
+				}
+				&:active {
+					background: darken($green,20%);
+					border-bottom: 3px solid darken($green,30%);
+					color: darken(#FFF,20%);
+				}
+			}
+		}
+	}
+}

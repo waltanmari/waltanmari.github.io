@@ -1,0 +1,31 @@
+.player-button {
+	display: inline-block;
+	z-index: 1000;
+    font-family:Proba;
+    font-size:14pt;
+    background:rgba(50, 191, 184, 0);
+    text-decoration:none;
+    text-transform:uppercase;
+    color:rgb(50, 191, 184);
+    border: 1px solid  rgb(50, 191, 184);
+    padding-bottom:17px;
+    padding-top:17px;
+    width: 105px;
+    -webkit-border-radius:  50px;
+            border-radius:  50px;
+    
+    &:hover {
+        color: #fff;
+        border: 1px solid rgba(50, 191, 184, 1);
+        background: rgba(50, 191, 184, 1);
+    	
+        
+    }
+	&:active {
+
+        background: rgba(#444, 1);
+        border: 1px solid rgba(#444, .5);
+        color: #fff;
+		
+	}
+}

@@ -1,0 +1,23 @@
+.footer {
+	color: #888;
+	&-rekviziti {
+		display: inline-block;
+		vertical-align: middle;
+		float: left;
+		padding-top: 20px;
+		font-size: 15px;
+		line-height: 20px;
+		
+	}
+	&-siteautor {
+		display: inline-block;
+		vertical-align: middle;
+		padding-top: 25px;
+	}
+	&-phone {
+		display: inline-block;
+		float: right;
+		font-size: 20px;
+		padding-top: 40px;
+	}
+}

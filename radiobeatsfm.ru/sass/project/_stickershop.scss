@@ -1,0 +1,115 @@
+.stickershop {
+	text-align: center;
+	padding: 50px;
+	border: 25px solid #fff;
+	@media screen and (max-width: 1001px) {
+		
+	}
+
+	@media screen and (max-width: 640px) {
+		
+	}
+
+		&-h1 {
+			display: block;		
+			color: #fff;
+			font-size: 50px;
+			text-transform: uppercase;
+			&-sticker {
+				display: inline-block;
+				margin-left: 10px;
+			}
+			@media screen and (max-width: 640px) {
+				width: 100%;
+				font-size: 35px;
+			}
+			@media screen and (max-width: 480px) {
+				width: 100%;
+				font-size: 20px;
+			}
+		}
+		&-img {
+			display: block;
+			margin: auto;
+			padding: 50px;
+			width: 350px;
+		}
+		&-cost {
+			display: block;
+			font-size: 25px;
+			color: #eee;
+			text-transform: uppercase;
+			&-cost {
+				display: inline-block;
+				font-size: 25px;
+				color: darken(#eee,50%);
+			}
+		}
+		&-button {
+			margin-top: 10px + 50px;
+
+					-webkit-transition:  0s;
+					   -moz-transition:  0s;
+					    -ms-transition:  0s;
+					     -o-transition:  0s;
+					        transition:  0s;
+			&:active {
+
+					-webkit-transform: translate(0px, 5px);
+					   -moz-transform: translate(0px, 5px);
+					    -ms-transform: translate(0px, 5px);
+					     -o-transform: translate(0px, 5px);
+					        transform: translate(0px, 5px);
+			    	-webkit-transition:  0s;
+					   -moz-transition:  0s;
+					    -ms-transition:  0s;
+					     -o-transition:  0s;
+					        transition:  0s;
+			}
+			a {
+			
+				
+				padding-top: 10px;
+				padding-bottom: 10px;
+				padding-left: 50px;
+				padding-right: 50px;
+				text-decoration: none;
+				text-transform: uppercase;
+				font-size: 15px;
+				font-weight: bold;
+				background: $main_blue;
+				color: #fff;
+				border-bottom: 5px solid darken($main_blue, 20%);
+				-webkit-border-bottom-left-radius: 5px;
+				        border-bottom-left-radius: 5px;
+				-webkit-border-bottom-right-radius: 5px;
+				        border-bottom-right-radius: 5px;
+					-webkit-transition:  0s;
+					   -moz-transition:  0s;
+					    -ms-transition:  0s;
+					     -o-transition:  0s;
+					        transition:  0s;
+				&:hover {
+					background: darken($main_blue,10%);
+					color: darken(#fff,10%);
+					border-bottom: 5px solid darken($main_blue, 20%);
+				}
+				&:active {
+					background: darken($main_blue,20%);
+					color: darken(#fff,20%);
+					border-bottom: 0px solid darken($main_blue, 30%);
+				-webkit-border-bottom-left-radius: 0px;
+				        border-bottom-left-radius: 0px;
+				-webkit-border-bottom-right-radius: 0px;
+				        border-bottom-right-radius: 0px;					
+					-webkit-transition: 0s;
+					   -moz-transition: 0s;
+					    -ms-transition: 0s;
+					     -o-transition: 0s;
+					        transition: 0s;
+					
+
+				}
+			}
+	}
+}

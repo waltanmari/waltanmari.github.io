@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: 
+Disallow: http://radiobeatsfm.ru/ñss
+Disallow: http://radiobeatsfm.ru/img
+Disallow: http://radiobeatsfm.ru/js

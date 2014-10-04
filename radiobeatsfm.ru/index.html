@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--[if lt IE 9]>
+    <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+    <![endif]-->
+    
+    <title>BEATS FM</title>
+   
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta http-equiv="cleartype" content="on"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <meta name="description" content="Meow."/>
+    <meta name="robots" content="noyaca"/>  
+    <meta name="robots" content="noodp"/>
+    <meta name="keywords" content="hip hop, music, beats, fm, radio"/>
+    <meta name="author" content="BEATS FM"/>
+    <meta name="copyright" content="(c)"> 
+    <meta http-equiv="Reply-to" content="vladislavnurov@ya.ru">
+    <meta name="apple-mobile-web-app-capable" content="no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" href="img/apple/apple-touch-icon.jpg">
+	<link href="img/apple/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76" />
+	<link href="img/apple/apple-touch-icon-120x120.jpg" rel="apple-touch-icon" sizes="120x120" />
+	<link href="img/apple/apple-touch-icon-152x152.jpg" rel="apple-touch-icon" sizes="152x152" />
+
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/animate.css">
+	
+
+</head>
+<body id="body">
+
+<script>
+	jQuery(document).ready(function($) {
+ 
+    var bodyH = $(window).height() / 2;
+    $("body").after();
+    $(window).bind('load', function() {
+    });
+ 
+});
+</script>
+
+	<!-- modal windows -->
+		<div class="modal" >
+		    <div class="modal-container modal-center">
+		        <div class="modal-form">
+		        	<div class="modal-form-h1">
+		        		Заполните форму и мы свяжемся с вами:
+		        	</div>
+		        	<form name="zakaz" action="php/send.php" method="post">
+		        		<input required="required" type="url" name="url" class="modal-form-input-name modal-form-input-input" placeholder="Страница ВКонтакте">
+		        		<input  required="required" type="text" name="city" class="vf-all modal-form-input-phone modal-form-input-input" placeholder="Почтовый адрес">
+		        		<input required="required" type="email" name="email" class="modal-form-input-mail modal-form-input-input" placeholder="E-Mail">
+		        		<input type="submit" class="modal-form-input-cta" value="Отправить заявку">
+		        	</form>
+		        </div>
+		    </div> <!-- modal-container -->
+		</div> <!-- modal -->
+	<!-- // end modal windows -->
+
+<audio id="htmlplayer" src="http://s5.radioheart.ru:8019/live"></audio>
+
+
+<!-- 
+PLAYER
+=========================== 
+-->
+<div class="player section" id="top">
+<i  class="fa fa-chevron-down fa-player"></i> 
+	<!-- volume buttons -->
+	<a id="player_volume" class="player_volume__minus"  onclick="document.getElementById('htmlplayer').volume-=0.1"></a>
+	<a id="player_volume" class="player_volume__plus"  onclick="document.getElementById('htmlplayer').volume+=0.1"></a>
+	<div class="player_volume-notify fadeIn">
+		<div class="player_volume-notify-down animated wow fadeOut" data-wow-delay="4s">
+			Volume Down
+		</div>
+		<div class="player_volume-notify-up animated wow fadeOut" data-wow-delay="4s">
+			Volume Up
+		</div>
+	</div>
+	<!-- end-volume buttons -->
+	<!-- player -->
+	<div class="is-vertical-centered">
+		<div class="player_player">
+			<!-- logo -->
+			<div class="player_logo animated animated fadeIn" >
+				<img src="img/logo_min.png" width="350" alt="BEATS FM" class="player_logo__img ">
+			</div>
+			<!-- end-logo -->
+			<!-- play/stop buttons -->
+			<div class="player_buttons" >
+				<a class="player_buttons-play play player-button   animated fadeIn"
+				   onclick="document.getElementById('htmlplayer').play();
+				            htmlplayer.volume=0.4; 
+				            return false; ">
+					Play	
+				</a>
+				<a class="player_buttons-pause pause player-button   animated fadeIn"
+					onclick="document.getElementById('htmlplayer').pause();
+					         return false; ">
+					Pause
+				</a>
+			</div>
+			<!-- end-play/stop buttons -->
+		</div>	  
+		
+	</div>
+
+	<!-- end-player -->
+	<div id="player_songname" class="player_songname songname">Загрузка...</div>
+		
+</div>
+
+<!-- Sticker shop -->
+<div class="stickershop section" id="sticker">
+	<div class="is-vertical-centered">
+		<div class="container">
+				<div class="stickershop-h1">BEATS FM <div class="stickershop-h1-sticker">STICKER</div></div>
+				<img src="img/logo_min.png" class="stickershop-img" alt="">
+				<div class="stickershop-cost"><div class="stickershop-cost-cost">COST:</div> 100 RUB</div>
+				<div class="stickershop-button ">
+					<a href="" class="modal-trigger">Заказать</a>
+				</div>
+
+		</div>
+	</div>
+</div>
+<!-- // end - Sticker shop -->
+<!-- 
+DKAY
+===========================
+ -->
+<div class="dkay section" id="dkay">
+	<div class=" is-vertical-centered">
+		<div class="dkay_logo">
+			<a href="http://vk.com/advancehomielabel" target="_blank">
+				<img class="dkay_logo__img" src="img/dkay/dkay.png" alt="D-KAY DRUMMASTA \\ BEATS FM"> 
+			</a>
+		</div>
+		<div class="dkay_info wow fadeIn">
+		  <div class="dkay_info-name wow fadeInLeft" data-wow-delay=".2s">
+		     D-KAY <div class="dkay_info-drummasta wow fadeInLeft" data-wow-delay=".5s">DRUMMASTA</div>
+		  </div> 
+		  <div style="text-transform: uppercase;" class="dkay_info-data wow fadeInDown" data-wow-delay=".8s">
+		     Воскресенье // 21:00
+		  </div> 
+		</div>			
+	</div>
+</div>
+<!-- 
+ENDPAGE
+===========================
+ -->
+<div class="end section">
+	<div class="is-vertical-centered">
+		<a href="#top" class="fa fa-chevron-up fa-end"></a> 	
+		<div class="end_container">
+			<div class="end_logo wow fadeIn" data-wow-delay=".1s">
+				<a href="http://vk.com/beatsfm" target="_blank">
+					<img src="img/logo.png" width="180" alt="BEATS FM" class="end_logo__img wow fadeIn">
+				</a>
+			</div>
+			<!-- <div class="end_slash wow fadeIn" data-wow-delay=".3s"></div>
+			<div class="end_staytuned wow fadeIn " data-wow-delay=".5s" >
+				Stay Tuned
+			</div> -->
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>         
+<!-- FASTCLICK - для сенсорных девайсов -->
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.2/fastclick.min.js"></script>
+	<script type='application/javascript'>
+		window.addEventListener('load', function() {
+		    new FastClick(document.body);
+		}, false);
+	</script>
+<!-- FASTCLICK - для сенсорных девайсов -->
+<!-- Проверка заполнения формы -->
+	<script src="js/jVForms.min.js"></script>
+	<script>
+	    jVForms.initialize();
+	</script> 
+<!-- Проверка заполнения формы -->
+<!-- Анимация на скролл -->
+	<script src="js/wow.min.js"></script>
+	<script>
+	 new WOW().init();
+	</script>
+<!-- Анимация на скролл -->
+<!-- POPUP на клик -->
+	<script>
+		jQuery(document).ready(function($){
+			//open popup
+			$('.modal-trigger').on('click', function(event){
+				event.preventDefault();
+				$('.modal').addClass('is-visible');
+			});
+			
+			//close popup
+			$('.modal').on('click', function(event){
+				if( $(event.target).is('.modal-close') || $(event.target).is('.modal') ) {
+					event.preventDefault();
+					$(this).removeClass('is-visible');
+				}
+			});
+			//close popup when clicking the esc keyboard button
+			$(document).keyup(function(event){
+		    	if(event.which=='27'){
+		    		$('.modal').removeClass('is-visible');
+			    }
+		    });
+		});
+	</script>
+<!-- // end POPUP -->
+
+<!-- прокрутка до якоря -->
+	<script type="text/javascript">
+	$(document).ready(function(){
+	   $('a[href*=#]').bind("click", function(e){
+	      var anchor = $(this);
+	      $('html, body').stop().animate({
+	         scrollTop: $(anchor.attr('href')).offset().top
+	      }, 500);
+	      e.preventDefault();
+	   });
+	   return false;
+	});
+	</script>
+<!-- // -->
+<!-- songname -->
+	<script>
+	   function nowplay()
+	   {
+	       $.ajax({
+	           url: "php/radiostat.php",  
+	           cache: false,
+	           success: function(html){
+	               $("#player_songname").html(html); 
+	           }
+	       });
+	   }
+	   $(document).ready(function(){
+	       nowplay();
+	       setInterval('nowplay()',5000);  
+	   });
+	</script> 
+<!-- // -->
+<!-- popup -->
+<script>
+	jQuery(document).ready(function($){
+		//open popup
+		$('.play').on('click', function(event){
+			event.preventDefault();
+			$('.songname').addClass('is-visible');
+		});
+		
+		$('.pause').on('click', function(event){
+			event.preventDefault();
+			$('.songname').removeClass('is-visible');
+		});
+	});
+</script>
+<!-- // -->
+<script>
+    $('#animate-css2').on('tap', function(){
+        $.mobile.toast({
+            message: 'Live long and prosper!',
+            classOnOpen: 'animated slideInLeft',
+            classOnClose: 'slideOutRight'
+        });
+    }); 
+</script> 
+<script src="js/jquery.windows.min.js"></script>
+<script>
+    $(document).ready(function(){
+        var $windows = $('.section');
+        $windows.windows({
+            snapping: true,
+            snapSpeed: 300,
+            snapInterval: 4550,
+            onScroll: function(s){},
+            onSnapComplete: function($el){},
+            onWindowEnter: function($el){}
+        });
+    });
+</script>
+
+<!-- Google.Analytic counter -->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-48738912-1', 'radiobeatsfm.ru');
+    ga('send', 'pageview');
+
+</script>
+	
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+    try {
+    w.yaCounter23746645 = new Ya.Metrika({id:23746645,
+            webvisor:true,
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true});
+    } catch(e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+    s = d.createElement("script"),
+    f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+    d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="//mc.yandex.ru/watch/23746645" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->	
+</body>
+</html>

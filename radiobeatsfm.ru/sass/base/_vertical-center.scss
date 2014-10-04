@@ -1,0 +1,15 @@
+// Родительский блок position:relative !!!
+// Некроссбраузерен
+// .is-vertical-centered {
+// 	display: table;
+// 	overflow: auto;
+// 	margin: auto;
+// 	position: absolute;
+// 	top: 0; left: 0; bottom: 0; right: 0;
+// }
+
+.is-vertical-centered {
+      display: table-cell;
+      text-align: center;
+      vertical-align: middle;
+}

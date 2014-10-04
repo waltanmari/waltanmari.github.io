@@ -1,0 +1,57 @@
+.container {
+	margin: auto;
+	min-width: 960px;
+	width: 960px;
+	
+	a {
+		text-decoration: none;
+	}
+}
+
+.header {
+	display: block;
+	height: 125px;
+}
+
+.descript {
+	display: block;
+	height: 75px + 40px + 25px + 20px + 100px + 17px + 17px + 40px + 17px + 6px + 75px;
+}
+
+.whywe {
+	display: block;
+	height: 400px;
+}
+
+.spec {
+	display: block;
+	height:  575px + 160px;
+}
+
+.partners {
+	display: block;
+	height: 245px + 95px;
+}
+
+.about {
+	display: block;
+	height: 375px;
+}
+
+.portfolio {
+	display: block;
+	height: 50px + 25px + 50px + 50px + 3px + 50px + 100px + 5px + 15px + 20px + 18px + 50px + 60px + 50px;
+}
+
+.howwework {
+	display: block;
+	height: 100px + 25px + 100px + 40px*3 + 10px*4 ;
+}
+
+.footer {
+	display: block;
+	height: 100px;
+}
+
+
+

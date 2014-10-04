@@ -1,0 +1,68 @@
+@font-face{
+font-family: Proba; 
+    src: url(../fonts/ProbaProExtraLight.otf);
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  &:before, &:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  -webkit-transition: all .2s;
+     -moz-transition: all .2s;
+      -ms-transition: all .2s;
+       -o-transition: all .2s;
+          transition: all .2s;
+}
+
+@media screen and (max-width: 640px) { 
+  .fa {display: none;}
+}
+
+html, body {
+  height: 100%;
+}
+
+
+
+html {
+  font-size: 100%;
+}
+
+
+
+a:hover {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  -ms-interpolation-mode: bicubic;
+}
+
+
+.flex-video {
+  position: relative;
+  padding-top: 1.5625rem;
+  padding-bottom: 67.5%;
+  height: 0;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  &.widescreen {
+    padding-bottom: 56.34%;
+  }
+  &.vimeo {
+    padding-top: 0;
+  }
+  iframe, object, embed, video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}

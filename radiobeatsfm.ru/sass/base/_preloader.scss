@@ -1,0 +1,17 @@
+.body_preloader {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	background: white;
+	z-index: 999999999;
+	&-block {
+		height: 100%;
+		width: 100%;
+		position: relative;
+		&-gif {
+			text-align: center;
+			margin: auto;
+		}
+	}
+
+}
